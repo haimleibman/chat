@@ -1,7 +1,7 @@
-import ICoach from "./coach/Coach.nodel";
+import ITrainer from "./trainer/Trainer.model";
 import image1 from "./assets/Coach1.jpg"
 
-export const Choaches: ICoach[] = [
+export const Choaches: ITrainer[] = [
     {
         id: 1,
         coachingArea: "Cardio",

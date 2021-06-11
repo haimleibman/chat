@@ -6,14 +6,19 @@ import {
   Route
 } from "react-router-dom";
 import Home from './home/Home';
+import Training from './training/Training';
 
 function App() {
   return (
     <div className={css.App}>
       <Router>
           <Switch>
-            <Route path="/Coach" component={() => <></>} />
-            <Route exact path="/" component={Home} />
+            <Route path="/training" >
+              <Training></Training>
+            </Route>
+            <Route exact path="/" >
+              <Home/>
+            </Route>
           </Switch>
       </Router>
     </div>

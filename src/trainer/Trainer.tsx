@@ -1,25 +1,25 @@
 import { Card } from '@material-ui/core';
 import { AccessTime } from '@material-ui/icons';
 import React from 'react';
-import css from './Coach.module.scss';
-import ICoach from './Coach.nodel';
+import css from './Trainer.module.scss';
+import ITrainer from './Trainer.model';
 
-interface ICoachProps {
-    Coach: ICoach;
+interface ITrainerProps {
+    Trainer: ITrainer;
 }
 
-function Coach(props: ICoachProps) {
+function Trainer(props: ITrainerProps) {
 
     return (
         <div className={css.Container}>
-            <div className={css.Coach}>
-                <img className={css.Image} src={props.Coach.image} alt="" />
+            <div className={css.Trainer}>
+                <img className={css.Image} src={props.Trainer.image} alt="" />
                 <div className={css.Details}>
                     <p className={css.Time}>
                         <AccessTime/>
-                        {props.Coach.time} min
+                        {props.Trainer.time} min
                     </p>
-                    <p>{props.Coach.coachingArea} </p>
+                    <p>{props.Trainer.coachingArea} </p>
                 </div>
             </div>
             <div className={css.Border}></div>
@@ -27,4 +27,4 @@ function Coach(props: ICoachProps) {
     );
 }
 
-export default Coach;
+export default Trainer;
