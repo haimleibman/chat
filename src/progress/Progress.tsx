@@ -7,7 +7,7 @@ function Progress() {
 
     return (
         <div className={css.Progress}>
-            {[1,2,3,2,1,1,3,3,2,3].map(num => <ProgerssBar value={num} ></ProgerssBar>)}
+            {[50,70,40,70,80,100,70,90,90,60].map(num => <ProgerssBar value={num} ></ProgerssBar>)}
         </div>
     );
 }
