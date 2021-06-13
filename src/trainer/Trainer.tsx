@@ -3,15 +3,21 @@ import { AccessTime } from '@material-ui/icons';
 import React from 'react';
 import css from './Trainer.module.scss';
 import ITrainer from './Trainer.model';
+import { useHistory } from 'react-router';
 
 interface ITrainerProps {
     Trainer: ITrainer;
 }
 
 function Trainer(props: ITrainerProps) {
+    const history = useHistory();
+
+    const hanldeClick = () => {
+        history.push(process.env.PUBLIC_URL + "/training");
+    }
 
     return (
-        <div className={css.Container}>
+        <div className={css.Container} onClick={hanldeClick}>
             <div className={css.Trainer}>
                 <img className={css.Image} src={props.Trainer.image} alt="" />
                 <div className={css.Details}>

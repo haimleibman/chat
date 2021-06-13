@@ -12,16 +12,16 @@ import Training from './training/Training';
 function App() {
   return (
     <div className={css.App}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
           <Switch>
-            <Route path="/training" >
+            <Route path={process.env.PUBLIC_URL +"/training"} >
               <Training></Training>
             </Route>
-            <Route exact path="/" >
+            <Route exact path={process.env.PUBLIC_URL + "/"} >
               <Home/>
             </Route>
-            <Route exact path="/*" >
-              <Redirect to="/" />
+            <Route exact path={process.env.PUBLIC_URL + "/*"} >
+              <Redirect to={process.env.PUBLIC_URL + "/"} />
             </Route>
           </Switch>
       </Router>

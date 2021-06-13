@@ -4,7 +4,7 @@ import css from './SelfStream.module.scss';
 
 function SelfStream() {
     const video = useRef<HTMLVideoElement>(null);
-    let history = useHistory();
+    const history = useHistory();
 
     useLayoutEffect(() => {
         (async () => {
@@ -13,7 +13,7 @@ function SelfStream() {
 
                 setTimeout(() => {
                      stopVideo();
-                    history.push("/");
+                    history.push(process.env.PUBLIC_URL + "/");
                 }, 9999999999)
             }
         })();
