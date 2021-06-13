@@ -13,8 +13,8 @@ function SelfStream() {
 
                 setTimeout(() => {
                      stopVideo();
-                    history.push(process.env.PUBLIC_URL + "/");
-                }, 9999999999)
+                    history.push("/");
+                }, 1000)
             }
         })();
 

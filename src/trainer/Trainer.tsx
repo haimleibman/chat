@@ -13,7 +13,7 @@ function Trainer(props: ITrainerProps) {
     const history = useHistory();
 
     const hanldeClick = () => {
-        history.push(process.env.PUBLIC_URL + "/training");
+        history.push("/training");
     }
 
     return (

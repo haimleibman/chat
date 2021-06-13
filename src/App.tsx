@@ -14,14 +14,14 @@ function App() {
     <div className={css.App}>
       <Router basename={process.env.PUBLIC_URL}>
           <Switch>
-            <Route path={process.env.PUBLIC_URL +"/training"} >
+            <Route path="/training" >
               <Training></Training>
             </Route>
-            <Route exact path={process.env.PUBLIC_URL + "/"} >
+            <Route exact path="/" >
               <Home/>
             </Route>
-            <Route exact path={process.env.PUBLIC_URL + "/*"} >
-              <Redirect to={process.env.PUBLIC_URL + "/"} />
+            <Route exact path="/*" >
+              <Redirect to="/" />
             </Route>
           </Switch>
       </Router>
