@@ -1,0 +1,28 @@
+.chat {
+    grid-area: content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: 100%;
+    width: 25em;
+    overflow: auto;
+    background-color: rgb(59, 92, 92);
+    color: rgb(133, 195, 216);
+
+    .MessagesContainer {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darkcyan;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.SpeechBalloon {
+    background: darkcyan;
+    width: fit-content;
+    max-width: 21em;
+    margin: 1em;
+    border-radius: .5em;
+    border: 2px solid darkslategray;
+
+    .name {
+        font-size: 13px;
+        color: darkslategray;
+        padding: 0 .5em;
+        border-bottom: 1px solid #2f4f4f66;
+    }
+
+    .text {
+        margin: .5em;
+        word-break: break-word;
+    }
+}

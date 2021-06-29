@@ -1,0 +1,33 @@
+.Sender {
+    grid-area: content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .Content {
+        border: 2px solid darkcyan;
+        border-radius: 2em;
+        padding: .5em;
+        margin: .5em .2em;
+        background: darkslategrey;
+        color: lightblue;
+        width: 100%;
+    }
+
+    .Send {
+        border: transparent;
+        background: transparent;
+        display: flex;
+        width: 3.5em;
+        height: 3.5em;
+        margin: .5em;
+        border-radius: 2em;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            height: 2.5em;
+        }
+    }
+}

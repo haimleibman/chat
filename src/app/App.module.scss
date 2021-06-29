@@ -8,9 +8,14 @@
 }
 
 .App {
+  display: grid;
+  grid-template-areas: "left content right";
+  grid-template-columns: auto 25em auto;
+  align-items: center;
+  
   position: fixed;
   inset: 0;
-  overflow: auto;
+  overflow: hidden;
 
   background-color: #222229;
   color: white;
